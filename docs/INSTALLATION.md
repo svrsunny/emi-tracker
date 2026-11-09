@@ -3,14 +3,41 @@
 EMI Tracker has two apps: one for **Windows** and one for **Android**. You can use either on its own or
 both together (see the [Sync guide](SYNC_GUIDE.md)).
 
-> **Downloads:** no ready-made installers or APKs have been published yet. Until a release appears on
-> the repository's *Releases* page, build the apps from source as described below; it takes about
-> 10–15 minutes the first time. Never install EMI Tracker files from other websites.
+Download the files from the **[Releases page](https://github.com/svrsunny/emi-tracker/releases/latest)**, or build them yourself from the source code
+(below). Only download EMI Tracker from this repository's Releases page.
 
-- [Requirements](#requirements)
+- [Download and verify](#download-and-verify) · [Requirements](#requirements)
 - [Windows](#windows): [build](#build-the-windows-installer) · [install](#install-on-windows) · [first start](#first-start-on-windows)
 - [Android](#android): [build](#build-the-android-apk) · [install](#install-on-android) · [permissions](#android-permissions) · [first start](#first-start-on-android)
 - [Updating](#updating) · [Uninstalling](#uninstalling)
+
+## Download and verify
+
+| File | For |
+| --- | --- |
+| `EMI-Tracker-Setup-<version>.exe` | Windows installer (recommended) |
+| `EMI-Tracker-Portable-<version>.exe` | Windows, a single file that runs without installing |
+| `EMI-Tracker-<version>.apk` | Android |
+| `SHA256SUMS.txt` | SHA-256 checksums of the files above |
+
+To check that a download is complete and unchanged, compare its checksum with the line in
+`SHA256SUMS.txt`:
+
+```powershell
+# Windows PowerShell
+Get-FileHash .\EMI-Tracker-Setup-1.5.0.exe -Algorithm SHA256
+```
+
+```bash
+# macOS / Linux / Git Bash
+sha256sum EMI-Tracker-1.5.0.apk
+```
+
+The Android APK is signed with the project's release key (certificate `CN=EMI Tracker`). Its
+SHA-256 certificate fingerprint is
+`a2:bc:a9:3e:cf:ff:71:d4:8b:56:a0:c9:5d:a7:71:d6:d2:28:5b:e0:a5:16:ee:03:ef:46:bf:0a:ce:df:49:d1`.
+
+With a downloaded file, skip the *Build* steps below and go straight to *Install*.
 
 ## Requirements
 
@@ -128,9 +155,10 @@ read or written only where you choose them with Android's file picker.
 
 - **Windows:** install the newer `EMI Tracker-Setup-<version>.exe` over the old one. Your data is kept,
   and a recovery copy is made the first time a new version opens it.
-- **Android:** install the newer APK over the old one. This keeps your data **only if both APKs were
-  signed with the same key**. If Android refuses the update, back up first, uninstall, install the new
-  APK, then restore the backup.
+- **Android:** install the newer APK over the old one; your data is kept. This works because every
+  release APK is signed with the same key. An APK you **built yourself** is signed with a different key,
+  so moving between a self-built APK and a downloaded one needs a one-time *back up → uninstall →
+  install → restore*.
 - If you use both apps, **update both** before syncing: an older app may not understand data written by
   a newer one (see [CHANGELOG.md](../CHANGELOG.md)).
 

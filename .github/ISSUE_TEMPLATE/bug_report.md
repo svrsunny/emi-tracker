@@ -13,8 +13,8 @@ Security problems: do not report them here, see SECURITY.md.
 -->
 
 **App and version**
-- [ ] Windows, version: <!-- see the bottom of the left menu, e.g. v1.4.1 -->
-- [ ] Android, version: <!-- see the bottom of the More tab, e.g. v1.4.2 -->
+- [ ] Windows, version: <!-- see the bottom of the left menu, e.g. v1.5.0 -->
+- [ ] Android, version: <!-- see the bottom of the More tab, e.g. v1.5.0 -->
 - Windows version / Android version and phone model:
 
 **What happened**

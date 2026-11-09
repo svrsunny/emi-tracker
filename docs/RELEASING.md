@@ -35,9 +35,9 @@ Where version numbers live:
    under the new version with the date.
 3. Repeat the privacy checks in [SECURITY_AUDIT.md](SECURITY_AUDIT.md#repeating-the-review).
 4. Build: `npm run dist` (Windows) and `./gradlew :app:assembleRelease` signed with the project's
-   release key (Android).
+   release key (Android; `android/keystore.properties` must exist). Check the APK's certificate with
+   `apksigner verify --print-certs app-release.apk`; it must show `CN=EMI Tracker`.
 5. Install both builds over the previous version and check that data is kept.
-6. Tag the commit (`vX.Y.Z`) and, if publishing binaries, attach the installer, portable exe and APK to a
-   GitHub release together with their SHA-256 checksums.
+6. Tag the commit (`vX.Y.Z`) and create a GitHub release with `EMI-Tracker-Setup-X.Y.Z.exe`,
+   `EMI-Tracker-Portable-X.Y.Z.exe`, `EMI-Tracker-X.Y.Z.apk` and `SHA256SUMS.txt`.
 
-No binary release has been published yet.

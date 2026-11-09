@@ -56,7 +56,7 @@ Full list with examples: **[docs/FEATURES.md](docs/FEATURES.md)**.
 | | Windows | Android |
 | --- | --- | --- |
 | Requires | Windows 10 / 11 (64-bit) | Android 8.0 or newer |
-| Current version | 1.4.1 | 1.4.2 |
+| Current version | 1.5.0 | 1.5.0 |
 | Data stored in | `%APPDATA%\EMI Tracker` | App-private storage |
 
 Each app works on its own. Using both, pair the phone with the PC once with a 6-digit code; after that
@@ -80,32 +80,23 @@ How it works, step by step: **[docs/SYNC_GUIDE.md](docs/SYNC_GUIDE.md)**.
 
 ## Installation
 
-> No ready-made installers or APKs have been published yet. Build them from source; it takes a few
-> commands. Full instructions, permissions and first steps: **[docs/INSTALLATION.md](docs/INSTALLATION.md)**.
+Download the latest version from the **[Releases page](https://github.com/svrsunny/emi-tracker/releases/latest)**:
 
-```bash
-git clone https://github.com/svrsunny/emi-tracker.git
-cd emi-tracker
-```
+| File | For |
+| --- | --- |
+| `EMI-Tracker-Setup-<version>.exe` | Windows installer (recommended) |
+| `EMI-Tracker-Portable-<version>.exe` | Windows, runs without installing |
+| `EMI-Tracker-<version>.apk` | Android phones (Android 8.0+) |
+| `SHA256SUMS.txt` | Checksums to verify the downloads |
 
-**Windows** (needs Node.js 22+):
+- **Windows:** run the installer. It is not code-signed, so SmartScreen may show *"Windows protected
+  your PC"*: choose **More info → Run anyway**.
+- **Android:** open the APK on your phone and allow *Install unknown apps* for your browser or file
+  manager when asked.
 
-```bash
-cd desktop
-npm install
-npm run dist
-```
-
-Then run `desktop/release/EMI Tracker-Setup-<version>.exe`.
-
-**Android** (needs JDK 17+ and the Android SDK, e.g. via Android Studio):
-
-```bash
-cd android
-./gradlew :app:assembleRelease
-```
-
-Then install `android/app/build/outputs/apk/release/app-release.apk` on your phone.
+Step-by-step instructions, permissions, updating and uninstalling:
+**[docs/INSTALLATION.md](docs/INSTALLATION.md)**. To build the apps yourself, see
+[docs/DEVELOPMENT.md](docs/DEVELOPMENT.md).
 
 ## Quick start
 
@@ -170,7 +161,7 @@ testing: **[docs/DEVELOPMENT.md](docs/DEVELOPMENT.md)**.
 
 ## Known limitations
 
-- No ready-made downloads yet; build from source.
+- The Windows installer is not code-signed, so SmartScreen shows a warning on first install.
 - No bank or SMS import; you enter loans and payments yourself.
 - Wi-Fi sync needs the Windows app running and both devices on the same home network.
 - Android may delay reminders to save battery; Windows reminders need the app running (the tray is

@@ -55,15 +55,15 @@ release.
 5. **The app lock is not storage encryption.** The databases are not encrypted by the app; Windows
    account security and Android device encryption protect them at rest.
 6. **Unencrypted backups and exports are plain files.** Keep them private or use encrypted backups.
-7. **Release binaries are not code-signed.** Windows SmartScreen warns; Android APKs built without
-   your own keystore are signed with the build machine's debug key.
+7. **The Windows installer is not code-signed.** SmartScreen warns on first install. Android release
+   APKs are signed with the project's release key; verify downloads with `SHA256SUMS.txt`.
 
 ## Recommended repository settings
 
 - Turn on GitHub secret scanning and push protection, and private vulnerability reporting
   (*Settings → Code security*), when the repository is public.
-- If you publish APKs, sign them with your own release keystore (see
-  [DEVELOPMENT.md](DEVELOPMENT.md#signing-android-releases)) and keep it out of the repository.
+- Keep the Android release keystore (`android/emi-release.jks`) and its password out of the repository
+  and backed up; losing them makes in-place updates of the released app impossible.
 
 ## Repeating the review
 

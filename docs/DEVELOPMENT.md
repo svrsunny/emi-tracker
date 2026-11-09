@@ -92,7 +92,9 @@ Add `--offline` to any Gradle command to build from the local cache without inte
 ### Signing Android releases
 
 Without extra setup the release APK is signed with the machine's debug key, which is fine for
-personal use. To sign with your own key:
+personal use. Official releases are signed with the project's release key, which only the maintainer
+holds. To sign with your own key, run `android/make-release-key.ps1` on Windows (it asks for a password
+and creates both files below), or do it by hand:
 
 1. Create a keystore inside the `android/` folder (keep it and its passwords safe; `*.jks` files are
    git-ignored):

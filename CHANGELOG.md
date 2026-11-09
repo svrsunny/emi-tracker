@@ -3,10 +3,19 @@
 All notable changes are listed here. The format follows [Keep a Changelog](https://keepachangelog.com/)
 and versions follow [Semantic Versioning](https://semver.org/) (see [docs/RELEASING.md](docs/RELEASING.md)).
 
-The Windows and Android apps share most version numbers but are built separately; entries say
-which app a change applies to when it is not both. No binary releases have been published.
+The Windows and Android apps are built separately; entries say which app a change applies to when
+it is not both. Downloads are on the [Releases](https://github.com/svrsunny/emi-tracker/releases) page.
 
 ## [Unreleased]
+
+## [1.5.0] — 2026-11-09
+
+First release with ready-made downloads: a Windows installer, a portable Windows app and an Android
+APK. Both apps now share the same version number.
+
+### Changed
+- The Android APK is signed with the project's release key. An APK you built yourself earlier
+  cannot be updated in place by it: back up, uninstall, install 1.5.0, then restore.
 
 ### Added
 - Open-source documentation: README, features, installation, user guide, sync guide, technical
@@ -90,4 +99,5 @@ which app a change applies to when it is not both. No binary releases have been 
   dashboard, heatmaps, forecasts, reminders, reports, verified (optionally encrypted) backups,
   folder sync and CSV/JSON export.
 
-[Unreleased]: https://github.com/svrsunny/emi-tracker/commits/main
+[Unreleased]: https://github.com/svrsunny/emi-tracker/compare/v1.5.0...main
+[1.5.0]: https://github.com/svrsunny/emi-tracker/releases/tag/v1.5.0

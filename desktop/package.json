@@ -1,7 +1,7 @@
 {
   "name": "emi-tracker-desktop",
   "productName": "EMI Tracker",
-  "version": "1.4.1",
+  "version": "1.5.0",
   "description": "Private, offline-first EMI and loan tracker for Windows",
   "author": "EMI Tracker",
   "license": "MIT",

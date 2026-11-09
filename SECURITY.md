@@ -8,8 +8,8 @@ Only the latest code on the default branch is supported. There are no long-term 
 
 | Component | Current version |
 | --- | --- |
-| Windows app (`desktop/`) | 1.4.1 |
-| Android app (`android/`) | 1.4.2 |
+| Windows app (`desktop/`) | 1.5.0 |
+| Android app (`android/`) | 1.5.0 |
 
 ## Reporting a vulnerability
 

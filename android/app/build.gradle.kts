@@ -15,8 +15,8 @@ android {
         applicationId = "com.emitracker.app"
         minSdk = 26 // Android 8.0: java.time, notification channels, adaptive icons
         targetSdk = 36
-        versionCode = 8
-        versionName = "1.4.2"
+        versionCode = 9
+        versionName = "1.5.0"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 

@@ -18,8 +18,8 @@ online service.
 No. Each app works on its own. Using both lets you keep them in sync (see the [Sync guide](SYNC_GUIDE.md)).
 
 **Where can I download it?**
-No ready-made downloads have been published yet. Build it from source as described in
-[INSTALLATION.md](INSTALLATION.md).
+From the [Releases page](https://github.com/svrsunny/emi-tracker/releases/latest): a Windows installer, a portable Windows app and an Android APK.
+See [INSTALLATION.md](INSTALLATION.md).
 
 **Is there an iPhone, Mac or Linux version?**
 No. Only Windows and Android are supported.
@@ -94,8 +94,9 @@ Erase on both devices before they sync, or unpair first. See
 - **Windows reminders need the app running** (the system tray is enough).
 - **The app lock does not encrypt the database**; device encryption and your Windows account protect
   stored data.
-- **Unsigned builds:** Windows SmartScreen warns about the installer, and Android APKs from different
-  computers cannot update each other unless signed with the same key.
+- **Windows installer not code-signed:** SmartScreen warns on first install.
+- **Self-built Android APKs** are signed with a different key than the released APK, so one cannot be
+  updated in place by the other (back up, uninstall, install, restore).
 - **English only.** Dates and currency can be formatted, but the interface is in English.
 - **Receipt attachments are Windows-only** and are not synced.
 - **Lending & borrowing has no interest.**
