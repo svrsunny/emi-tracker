@@ -1,0 +1,64 @@
+# --- never commit personal data -------------------------------------------
+*.sqlite
+*.sqlite-journal
+*.db
+*.db-journal
+*.emibackup
+*.emisync
+emi-tracker-backup-*.json
+emi-tracker-auto-*.json
+emi-tracker-sync-*.json
+emi-tracker-export*.json
+recovery-backups/
+attachments/
+
+# --- signing / secrets -----------------------------------------------------
+*.jks
+*.keystore
+keystore.properties
+!keystore.properties.example
+.env
+.env.*
+
+# --- desktop (Electron) ----------------------------------------------------
+desktop/node_modules/
+desktop/dist/
+desktop/release/
+desktop/test-results/
+desktop/playwright-report/
+desktop/*.log
+
+# --- android ---------------------------------------------------------------
+android/.gradle/
+android/.kotlin/
+android/build/
+android/*/build/
+android/local.properties
+android/.idea/
+android/captures/
+*.iml
+.cxx/
+
+# --- personal files that must never be published --------------------------
+# screen recordings / screenshots of the real app, loan documents, statements
+*.mp4
+*.mov
+*.webm
+/*.png
+/*.jpg
+/*.pdf
+# local tool state and development data folders (EMI_TRACKER_DATA_DIR)
+.claude/
+.devdata/
+desktop/.devdata/
+*.log
+
+# --- OS / editor -----------------------------------------------------------
+.DS_Store
+Thumbs.db
+.vscode/
+*.swp
+
+# synthetic cross-platform test fixtures (no personal data) are versioned
+!fixtures/
+!fixtures/**

@@ -1,0 +1,36 @@
+appId: com.emitracker.desktop
+productName: EMI Tracker
+copyright: Copyright © EMI Tracker
+directories:
+  output: release
+  buildResources: build
+files:
+  - dist/**/*
+  - build/icon.png
+  - package.json
+  - "!dist/main/sql-wasm.wasm"
+extraResources:
+  - from: node_modules/sql.js/dist/sql-wasm.wasm
+    to: sql-wasm.wasm
+asar: true
+# No auto-update provider is configured: the app never checks for updates online.
+publish: null
+win:
+  target:
+    - target: nsis
+      arch: [x64]
+    - target: portable
+      arch: [x64]
+  icon: build/icon.ico
+  artifactName: ${productName}-Setup-${version}.${ext}
+portable:
+  artifactName: ${productName}-Portable-${version}.${ext}
+nsis:
+  oneClick: false
+  perMachine: false
+  allowToChangeInstallationDirectory: true
+  createDesktopShortcut: true
+  createStartMenuShortcut: true
+  shortcutName: EMI Tracker
+  # User data (%APPDATA%\EMI Tracker) is kept on uninstall so financial records are never lost by accident.
+  deleteAppDataOnUninstall: false

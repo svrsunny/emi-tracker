@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Report a security vulnerability
+    url: https://github.com/svrsunny/emi-tracker/security/advisories/new
+    about: Please report security problems privately (see SECURITY.md).
+  - name: Questions and usage help
+    url: https://github.com/svrsunny/emi-tracker/blob/main/docs/FAQ.md
+    about: Many questions are answered in the FAQ and the troubleshooting guide.

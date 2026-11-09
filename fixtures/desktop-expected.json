@@ -1,0 +1,32 @@
+{
+ "asOf": "2024-08-15",
+ "loans": {
+  "C1": {
+   "outstandingPrincipal": "609363.11",
+   "totalPaid": "5000.00",
+   "interestPaid": "4825.51",
+   "remainingInterest": "189366.79",
+   "closureDate": "2029-10-10",
+   "installmentsPaid": "0",
+   "dividends": "0.00"
+  },
+  "K1": {
+   "outstandingPrincipal": "80000.00",
+   "totalPaid": "18750.00",
+   "interestPaid": "0.00",
+   "remainingInterest": "0.00",
+   "closureDate": "2025-12-05",
+   "installmentsPaid": "4",
+   "dividends": "1250.00"
+  },
+  "H1": {
+   "outstandingPrincipal": "2325128.93",
+   "totalPaid": "283308.00",
+   "interestPaid": "107686.93",
+   "remainingInterest": "2362564.73",
+   "closureDate": "2042-05-01",
+   "installmentsPaid": "6",
+   "dividends": "0.00"
+  }
+ }
+}

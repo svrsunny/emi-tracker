@@ -1,0 +1,15 @@
+{
+  "code": "482913",
+  "phonePrivatePkcs8": "MIGHAgEAMBMGByqGSM49AgEGCCqGSM49AwEHBG0wawIBAQQgGVIOpkP5/GOUoJPl9jTjUV5gd9l4o2kHBGi6J54sNZ+hRANCAATOW7c5+inxlc1srecOHkNyl64kyKT7tSNT/4oCLoHbXT1rE0HwSOQ+RDh7Dn/lihJ/koYQOd1w48aMDq7dO4H1",
+  "phonePub": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEzlu3Ofop8ZXNbK3nDh5DcpeuJMik+7UjU/+KAi6B2109axNB8EjkPkQ4ew5/5YoSf5KGEDndcOPGjA6u3TuB9Q==",
+  "pcPub": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEiIiFS40RVUOloG/KBK0XTfVVDlgDD8k248GBEqWCq7QBYkCOvU8tuy+HBygFVQF4J0pot7OVk1Ssr16WR5jFqA==",
+  "key": "tQIZJ0DEvBMQRr2RKbi7hK3kTYUkyISppBNxTmCXB6k=",
+  "phoneProof": "InxU9Fy5HNs6y8PrREdGxI73p8WEvBPx/P6w5tJtLM0=",
+  "pcProof": "zvJsVWHEFt0Qn0JnE0YfyScfnvVxpGkt55HGjGPnrdE=",
+  "deviceId": "vector-phone",
+  "plaintext": "{\"note\":\"Wi-Fi sync ₹ vector\",\"n\":1}",
+  "sealed": {
+    "iv": "n2sK2HmPya88sp1q",
+    "data": "F0qg6NeWZmMjVIL314065w7n0EdIeVA5CN/Y66E7xVCNLTQjjuoohHR0w5Gd3DehxB+acp5e"
+  }
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Wi-Fi sync talks plain HTTP to the PC on the home network; every snapshot inside it is
+  end-to-end encrypted (AES-256-GCM with the pairing key) and the app refuses any address
+  outside the local network before connecting (LanSync.baseUrl). No other traffic exists.
+-->
+<network-security-config>
+    <base-config cleartextTrafficPermitted="true" />
+</network-security-config>

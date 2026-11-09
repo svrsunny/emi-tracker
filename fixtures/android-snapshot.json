@@ -1,0 +1,419 @@
+{
+    "format": "emi-tracker-snapshot",
+    "formatVersion": 1,
+    "schemaVersion": 4,
+    "kind": "sync",
+    "createdAt": "2026-11-09T15:10:27.066752500Z",
+    "app": {
+        "name": "EMI Tracker",
+        "version": "test",
+        "platform": "android"
+    },
+    "deviceId": "android-fixture",
+    "deviceName": "Fixture phone",
+    "counts": {
+        "loans": 2,
+        "adjustments": 1,
+        "payments": 2,
+        "customReminders": 1,
+        "notifications": 1,
+        "audit": 0,
+        "categories": 0,
+        "bills": 1,
+        "billPayments": 1,
+        "debts": 2,
+        "debtRepayments": 1,
+        "tombstones": 1
+    },
+    "checksum": "2783b0d6c22f641ddf58189bd23d521e9e38e3836f721f4c56f9ee75f4be0c16",
+    "data": {
+        "loans": [
+            {
+                "id": "L1",
+                "createdAt": "2024-01-01T00:00:00.000Z",
+                "updatedAt": "2024-01-01T00:00:00.000Z",
+                "name": "Test loan",
+                "category": "Home",
+                "lender": "Bank",
+                "accountRef": "",
+                "maskAccountRef": true,
+                "loanType": "home",
+                "status": "active",
+                "sanctionDate": null,
+                "startDate": "2024-01-01",
+                "firstEmiDate": "2024-02-01",
+                "emiDueDay": 1,
+                "sanctionedAmount": "100000.00",
+                "disbursedAmount": "100000.00",
+                "principal": "100000.00",
+                "annualRate": "12",
+                "rateType": "fixed",
+                "interestMethod": "reducing_monthly",
+                "frequency": "monthly",
+                "emiAmount": null,
+                "emiRounding": "paisa",
+                "totalInstallments": 12,
+                "moratoriumPeriods": 0,
+                "moratoriumTreatment": "capitalize",
+                "preEmiInterest": "0.00",
+                "processingFee": "0.00",
+                "otherCharges": "0.00",
+                "lateFee": "0.00",
+                "penalRate": "0",
+                "gracePeriodDays": 0,
+                "advanceEmiBalance": "0.00",
+                "prepaymentEffect": "reduce_tenure",
+                "allocationOrder": "interest_principal_fees",
+                "installmentsPaidBeforeTracking": 0,
+                "openingOutstanding": null,
+                "trackingStartDate": "2024-01-01",
+                "lenderOutstanding": null,
+                "lenderOutstandingDate": null,
+                "reminderEnabled": true,
+                "reminderOffsets": null,
+                "notes": "",
+                "color": "#4f8cff"
+            },
+            {
+                "id": "L2",
+                "createdAt": "2024-01-01T00:00:00.000Z",
+                "updatedAt": "2024-01-01T00:00:00.000Z",
+                "name": "Second",
+                "category": "Home",
+                "lender": "Bank",
+                "accountRef": "",
+                "maskAccountRef": true,
+                "loanType": "home",
+                "status": "active",
+                "sanctionDate": null,
+                "startDate": "2024-01-01",
+                "firstEmiDate": "2024-02-01",
+                "emiDueDay": 1,
+                "sanctionedAmount": "50000.00",
+                "disbursedAmount": "50000.00",
+                "principal": "50000.00",
+                "annualRate": "12",
+                "rateType": "fixed",
+                "interestMethod": "reducing_monthly",
+                "frequency": "monthly",
+                "emiAmount": null,
+                "emiRounding": "paisa",
+                "totalInstallments": 12,
+                "moratoriumPeriods": 0,
+                "moratoriumTreatment": "capitalize",
+                "preEmiInterest": "0.00",
+                "processingFee": "0.00",
+                "otherCharges": "0.00",
+                "lateFee": "0.00",
+                "penalRate": "0",
+                "gracePeriodDays": 0,
+                "advanceEmiBalance": "0.00",
+                "prepaymentEffect": "reduce_tenure",
+                "allocationOrder": "interest_principal_fees",
+                "installmentsPaidBeforeTracking": 0,
+                "openingOutstanding": null,
+                "trackingStartDate": "2024-01-01",
+                "lenderOutstanding": null,
+                "lenderOutstandingDate": null,
+                "reminderEnabled": true,
+                "reminderOffsets": null,
+                "notes": "",
+                "color": "#4f8cff"
+            }
+        ],
+        "adjustments": [
+            {
+                "id": "A1",
+                "createdAt": "2024-01-01T00:00:00.000Z",
+                "updatedAt": "2024-01-01T00:00:00.000Z",
+                "loanId": "L1",
+                "effectiveDate": "2024-06-01",
+                "kind": "rate",
+                "annualRate": "11.5",
+                "emiAmount": null,
+                "remainingInstallments": null,
+                "recalc": "keep_emi",
+                "note": "android fixture"
+            }
+        ],
+        "payments": [
+            {
+                "id": "p1",
+                "createdAt": "2024-01-01T00:00:54.000Z",
+                "updatedAt": "2024-01-01T00:00:00.000Z",
+                "loanId": "L1",
+                "txnDate": "2024-02-01",
+                "installmentNo": 1,
+                "type": "emi",
+                "amount": "8884.88",
+                "manualAllocation": false,
+                "allocPrincipal": "0.00",
+                "allocInterest": "0.00",
+                "allocFees": "0.00",
+                "allocPenalty": "0.00",
+                "reference": "",
+                "notes": "",
+                "attachmentPath": "",
+                "reconciled": false,
+                "status": "active",
+                "reversalReason": "",
+                "reversedAt": null
+            },
+            {
+                "id": "p2",
+                "createdAt": "2024-01-01T00:00:55.000Z",
+                "updatedAt": "2024-01-01T00:00:00.000Z",
+                "loanId": "L1",
+                "txnDate": "2024-03-01",
+                "installmentNo": 2,
+                "type": "emi",
+                "amount": "8884.88",
+                "manualAllocation": false,
+                "allocPrincipal": "0.00",
+                "allocInterest": "0.00",
+                "allocFees": "0.00",
+                "allocPenalty": "0.00",
+                "reference": "",
+                "notes": "",
+                "attachmentPath": "",
+                "reconciled": false,
+                "status": "active",
+                "reversalReason": "",
+                "reversedAt": null
+            }
+        ],
+        "customReminders": [
+            {
+                "id": "r1",
+                "createdAt": "2024-01-01T00:00:00.000Z",
+                "updatedAt": "2024-01-01T00:00:00.000Z",
+                "title": "Check \"statement\"\n",
+                "description": "line\tbreak",
+                "date": "2024-04-01",
+                "time": "09:00",
+                "repeat": "monthly",
+                "loanId": "L1",
+                "enabled": true
+            }
+        ],
+        "notifications": [
+            {
+                "id": "AN1",
+                "createdAt": "2024-01-01T00:00:00.000Z",
+                "updatedAt": "2024-01-01T00:00:00.000Z",
+                "key": "debt_due:AL1:2024-09-01",
+                "category": "debt",
+                "title": "Collect",
+                "body": "b",
+                "loanId": null,
+                "scheduledFor": "2024-09-01T09:00",
+                "deliveredAt": "2024-01-01T00:00:00.000Z",
+                "state": "sent",
+                "snoozedUntil": null,
+                "channel": "in_app",
+                "late": false,
+                "deviceId": "android-fixture"
+            }
+        ],
+        "audit": [],
+        "categories": [],
+        "bills": [
+            {
+                "id": "AO1",
+                "createdAt": "2024-01-01T00:00:00.000Z",
+                "updatedAt": "2024-01-01T00:00:00.000Z",
+                "name": "Phone repair",
+                "category": "other",
+                "payee": "",
+                "amount": "1200.00",
+                "variable": false,
+                "frequency": "once",
+                "dueDay": 20,
+                "startDate": "2024-07-20",
+                "endDate": null,
+                "active": true,
+                "reminderEnabled": true,
+                "reminderOffsets": null,
+                "notes": ""
+            }
+        ],
+        "billPayments": [
+            {
+                "id": "AOP1",
+                "createdAt": "2024-01-01T00:00:00.000Z",
+                "updatedAt": "2024-01-01T00:00:00.000Z",
+                "billId": "AO1",
+                "dueDate": "2024-07-20",
+                "paidDate": "2024-07-20",
+                "amount": "1200.00",
+                "notes": ""
+            }
+        ],
+        "debts": [
+            {
+                "id": "AB1",
+                "createdAt": "2024-01-01T00:00:00.000Z",
+                "updatedAt": "2024-01-01T00:00:00.000Z",
+                "direction": "borrowed",
+                "person": "Phone uncle",
+                "amount": "8000.00",
+                "date": "2024-05-01",
+                "dueDate": null,
+                "reminderEnabled": false,
+                "notes": ""
+            },
+            {
+                "id": "AL1",
+                "createdAt": "2024-01-01T00:00:00.000Z",
+                "updatedAt": "2024-01-01T00:00:00.000Z",
+                "direction": "lent",
+                "person": "Phone friend",
+                "amount": "5000.00",
+                "date": "2024-06-01",
+                "dueDate": "2024-09-01",
+                "reminderEnabled": true,
+                "notes": ""
+            }
+        ],
+        "debtRepayments": [
+            {
+                "id": "ADR1",
+                "createdAt": "2024-01-01T00:00:00.000Z",
+                "updatedAt": "2024-01-01T00:00:00.000Z",
+                "debtId": "AL1",
+                "date": "2024-07-01",
+                "amount": "2500.00",
+                "notes": ""
+            }
+        ],
+        "tombstones": [
+            {
+                "id": "AX1",
+                "table": "debts",
+                "deletedAt": "2024-01-01T00:00:00.000Z"
+            }
+        ],
+        "preferences": {
+            "value": {
+                "currency": "INR",
+                "locale": "en-IN",
+                "decimals": 2,
+                "dateFormat": "DD MMM YYYY",
+                "weekStart": 1,
+                "timeZone": "",
+                "theme": "dark",
+                "accent": "#34c38f",
+                "heatmapPalette": "emerald",
+                "heatmapThresholds": [
+                    0,
+                    5000,
+                    25000,
+                    75000
+                ],
+                "dashboardWidgets": [
+                    {
+                        "id": "summary",
+                        "visible": true
+                    },
+                    {
+                        "id": "due",
+                        "visible": true
+                    },
+                    {
+                        "id": "breakdown",
+                        "visible": true
+                    },
+                    {
+                        "id": "paidRemaining",
+                        "visible": true
+                    },
+                    {
+                        "id": "progress",
+                        "visible": true
+                    },
+                    {
+                        "id": "monthly",
+                        "visible": true
+                    },
+                    {
+                        "id": "actualVsScheduled",
+                        "visible": true
+                    },
+                    {
+                        "id": "interestTrend",
+                        "visible": true
+                    },
+                    {
+                        "id": "timeline",
+                        "visible": true
+                    },
+                    {
+                        "id": "calendar",
+                        "visible": true
+                    },
+                    {
+                        "id": "distribution",
+                        "visible": true
+                    },
+                    {
+                        "id": "heatmap",
+                        "visible": true
+                    }
+                ],
+                "dashboardRange": "12m",
+                "loanSort": "next_due",
+                "loanFilter": "active",
+                "reminders": {
+                    "enabled": true,
+                    "categories": {
+                        "emi_upcoming": true,
+                        "emi_due": true,
+                        "emi_overdue": true,
+                        "emi_missed": true,
+                        "loan_closure": true,
+                        "summary_monthly": true,
+                        "summary_weekly": false,
+                        "backup": true,
+                        "custom": true,
+                        "rate_change": true,
+                        "bill": true,
+                        "debt": true
+                    },
+                    "offsets": [
+                        7,
+                        3,
+                        1
+                    ],
+                    "time": "09:00",
+                    "overdueRepeatDays": 2,
+                    "maxRepeats": 5,
+                    "quietStart": "22:00",
+                    "quietEnd": "08:00",
+                    "quietEnabled": true,
+                    "weekdays": [
+                        true,
+                        true,
+                        true,
+                        true,
+                        true,
+                        true,
+                        true
+                    ],
+                    "sound": true,
+                    "vibrate": true,
+                    "snoozeMinutes": 60,
+                    "priority": "high",
+                    "channels": {
+                        "native": true,
+                        "inApp": true
+                    },
+                    "closureLeadDays": 30,
+                    "backupIntervalDays": 7,
+                    "weeklySummaryDay": 1,
+                    "catchUpDays": 3
+                }
+            },
+            "updatedAt": "2024-01-01T00:00:00.000Z"
+        }
+    }
+}

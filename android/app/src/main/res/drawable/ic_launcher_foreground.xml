@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- A bank: pediment, four columns and a base, inside the adaptive-icon safe zone. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp" android:height="108dp" android:viewportWidth="108" android:viewportHeight="108">
+    <path android:fillColor="#FFFFFF" android:pathData="M54,30 L76,42 L32,42 Z" />
+    <path android:fillColor="#FFFFFF" android:pathData="M32,43h44v3h-44z" />
+    <path android:fillColor="#FFFFFF" android:pathData="M36,49h5v17h-5z M46,49h5v17h-5z M57,49h5v17h-5z M67,49h5v17h-5z" />
+    <path android:fillColor="#FFFFFF" android:pathData="M32,69h44v5h-44z" />
+</vector>
